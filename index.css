@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Manrope&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Header start */
 header{
 background: rgba(255, 144, 14, 0.10);
@@ -38,7 +42,7 @@ font-weight: 500;
 .banner{
    text-align: center;
 }
- .banner h3, p{
+ .banner h3, .banner-p{
     width: 70%;
     text-align: center;
     margin: 20px auto;
@@ -68,8 +72,7 @@ font-weight: 500;
 header{
     padding: 20px;
 }
-.banner h3,
-p {
+.banner h3, .banner-p{
     width: 100%;
     text-align: center;
     margin: 20px auto;
@@ -78,16 +81,376 @@ p {
         flex-direction: column;
     }
 }
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width:576px) and (max-width:1092px){
 header{
     padding: 70px;
 }
-.banner h3,
-p {
-    width: 100%;
+.banner h3, .banner-p{
+    width: 70%;
     text-align: center;
     margin: 20px auto;
 }
 }
 /* Header end */
 
+ /* Teams section start */
+.teams {
+    width: 60%;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.team-seaction {
+    display: flex;
+    align-items: center;
+}
+.teams-image{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem;
+
+}
+.teams-image img{
+    width: 100%;
+    box-shadow: 5px 5px 7px #cacaca;
+} 
+.teams-about{
+padding: 0 50px;
+}
+.Quick-list{
+color: var(--Dark-03, #727272);
+    font-family: Work Sans;
+    font-size:2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.of-Our{
+color: var(--Dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.eatures{
+color: #FF900E;
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.teams-descriv{
+    font-size: 16px;
+    color: #727272;
+}
+@media screen and (max-width:576px){
+    .team-seaction{
+        flex-direction: column
+    }
+    .teams-about {
+         padding: 70px 20px;
+        }
+    .teams-image {
+         grid-template-columns: repeat(1, 1fr);
+         width: 500px;
+        }
+                .teams {
+                width: 90%;
+                    margin: 0 auto;
+                }
+}
+@media screen and (min-width:576px) and (max-width:1092px) {
+.teams {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+         .team-seaction {
+             flex-direction: column
+         }
+.teams-image img {
+    width: 100%;
+}
+.teams-about {
+    padding: 70px 20px;
+}
+}
+/* Teams section end */
+
+
+
+.Features{
+width: 70%;
+    margin: 80px auto;
+    display: flex;
+}
+.Features-title{
+display: grid;
+width: 60%;
+margin-right: 100px;
+grid-template-rows: repeat(1, 1fr);
+gap: 40px;
+}
+.Features-title .fea-ti{
+    font-family: Work Sans;
+        font-size: 45px;
+        font-family: 700;
+}
+.Features-title p{
+    font-family: Work Sans;
+        font-size: 16px;
+        color: #727272;
+        font-weight: 400;
+}
+.Features-desk h3{
+    font-family: Work Sans;
+        font-size: 20px;
+        color: #131313;
+        font-weight: 600;
+        padding-bottom: 10px;
+}
+.Features-image{
+    position: relative;
+}
+.Features-image img{
+    width: 100%; 
+    
+}
+.years{
+width: 192px;
+    height: 130px;
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    padding-top: 58px;
+    position: absolute;
+    bottom: 0;
+}
+.years h3{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    font-family: Work Sans;
+}
+.years p{
+    color: white;
+    font-size: 1rem;
+}
+@media screen and (max-width:576px){
+    .Features {
+        width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+        }
+         .Features-title {
+         width: 90%;
+       margin: auto;
+         }
+     .Features-image{
+        padding-top: 50px;
+     }
+}
+@media screen and (min-width:576px) and (max-width:1092px){
+.Features {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Features-title {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Features-image {
+        padding-top: 50px;
+    }
+}
+
+
+/* rang point start */
+.rang-secton{
+width: 70%;
+    margin: 0 auto;
+}
+.rang-title-seaction{
+padding-top: 80px;
+}
+.rang-title-seaction h3{
+    font-family: Work Sans;
+        font-size: 1.5rem;
+}
+.rang-title-seaction p{
+    font-family: Work Sans;
+        font-size: 1rem;
+        width: 60%;
+}
+.rang-parformans{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+width: 90%;
+margin: auto;
+padding-top: 50px;
+}
+.rang-point{
+    border: 1px solid red;
+    text-align: center;
+}
+.rang-point img{
+    margin-top: 20px;
+}
+.rang-point h2, p{
+padding: 5px;
+margin: 0;
+}
+.rang-point h2{
+    color: #424242;
+    font-style: 2rem;
+}
+.rang-point p{
+    color: #727272;
+    font-style: 1rem;
+padding-bottom: 20px;
+}
+
+@media screen and (max-width:576px){
+
+.rang-secton{
+    width: 90%;
+    margin: auto;
+}
+.rang-parformans {
+        grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+        }
+                .rang-title-seaction p {
+                    width: 100%;
+                }
+    }
+
+    @media screen and (min-width:576px) and (max-width:1092px){
+        .rang-secton {
+                width: 90%;
+                margin: auto;
+            }
+            .rang-parformans {
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+            }
+    }
+ /*rang point end */
+
+
+/* Sponspors-secton start */
+.Sponspors-secton{
+width: 80%;
+margin: 0 auto;
+}
+.Sponspors-title-seaction{
+text-align: center;
+margin: 20px auto;
+padding-top: 70px;
+}
+.Sponspors-title-seaction h3{
+font-size: 2rem;
+color: #131313;
+    font-family: Work Sans;
+    font-weight: 700;
+   margin: 0;
+}
+.Sponspors-title-seaction p{
+font-size: 1rem;
+color: #727272;
+    font-family: Work Sans;
+    font-weight: 400;
+ padding-bottom: 20px;
+ width: 50%;
+ margin: auto;
+}
+.Sponspors-image{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.Sponspors-image img{
+width: 50%;
+margin: auto;
+}
+
+@media screen and (max-width:576px){
+    .Sponspors-secton {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .Sponspors-title-seaction p {
+            width: 90%;
+            margin: auto;
+        }
+    .Sponspors-image {
+            grid-template-columns: repeat(1, 1fr);
+        }
+      .Sponspors-image img {
+       width: 60%;
+       margin: auto;
+       padding-top: 30px;
+         }
+}
+@media screen and (min-width:576px) and (max-width:1092px){
+    .Sponspors-secton {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .Sponspors-title-seaction p {
+            width: 90%;
+            margin: auto;
+        }
+    .Sponspors-image {
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+      .Sponspors-image img {
+       width: 60%;
+       margin: auto;
+       padding-top: 30px;
+         }
+} 
+/* Sponspors-secton end */
+
+
+/* footer start */
+footer{
+    width: 80%;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 8px;
+    background: #c97b1d;
+   text-align: center;
+}
+footer h3{
+    color: #000;
+        margin-top: 50px;
+            padding-top: 40px;
+            font-size: 1rem;
+}
+@media screen and (max-width:576px){
+    footer {
+            width: 80%;
+            height: 100px;
+            margin: auto;
+            border-radius: 8px;
+            background: #FFF4E7;
+            text-align: center;
+        }
+} 
+@media screen and (min-width:576px) and (max-width:1092px){
+    footer {
+            width: 80%;
+            height: 100px;
+            margin: auto;
+            border-radius: 8px;
+            background: #FFF4E7;
+            text-align: center;
+            font-size: 1rem;
+        }
+}
+/* footer end */
